@@ -1,0 +1,11 @@
+<div id="main">
+  <h2 style="text-align: center;background-color: blue; color: white;">Task 2</h2>
+
+    <h1>TODOLIST</h1>
+<input type="text" style="padding: 4px 10px;" [(ngModel)]="newItem" placeholder="Add WorkItem">
+    <button id="b1"  (click)="addItem()">Add</button>
+    <h3>View todo list Items:</h3>
+    <ul>
+      <li *ngFor="let item of items">{{ item }} <button id="b2"  (click)="removeItem(item)">Remove</button></li>
+    </ul>
+</div>

@@ -1,0 +1,9 @@
+#main{
+    margin-left: 30rem;
+    margin-right: 20rem;
+    background-color: beige;
+    padding: 1rem;
+    border: 2px solid rgb(187, 226, 31);
+    border-radius: 5px;
+    box-shadow: 2px 5px rgb(15, 15, 15);
+  }

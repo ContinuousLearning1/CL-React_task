@@ -1,0 +1,56 @@
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .submitted-details {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  #main{
+    margin-left: 25%;
+    margin-right: 25%;
+    background-color: rgb(208, 203, 171);
+    padding: 1rem;
+    /* border: 2px solid rgb(187, 226, 31); */
+  border-radius: 5px;
+  box-shadow: 2px 5px rgb(15, 15, 15);
+  }
+  input[type="text"] {
+    display: inline;
+    padding: 7px;
+    font-size: 16px;
+    width: 50%;
+    margin-bottom: 12px;
+    margin-left: 9%;
+  }
+  input[type="email"] {
+    display: inline;
+    padding: 7px;
+    font-size: 16px;
+    width: 50%;
+    margin-bottom: 12px;
+    margin-left: 9%;
+  }
+  input[type="password"] {
+    display: inline;
+    padding: 7px;
+    font-size: 16px;
+    width: 50%;
+    margin-bottom: 12px;
+    margin-left: 2%;
+  }
+  input[type="tel"] {
+    display: inline;
+    padding: 7px;
+    font-size: 16px;
+    width: 50%;
+    margin-bottom: 12px;
+    margin-left: 5.5%;
+  }

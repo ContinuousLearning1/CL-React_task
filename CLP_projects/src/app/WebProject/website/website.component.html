@@ -1,0 +1,6 @@
+<h1>Website Viewer</h1>
+    <input [(ngModel)]="websiteUrl" placeholder="Enter Website URL" />
+    <button (click)="loadWebsite()">Load Website</button>
+    <div *ngIf="safeWebsiteUrl">
+      <iframe [src]="safeWebsiteUrl" width="50%" height="500px" frameborder="0"></iframe>
+    </div>

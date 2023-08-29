@@ -1,0 +1,48 @@
+<div id="main">
+<div class="container">
+    <h2 style="text-align: center;background-color: blue; color: white;">Task 3</h2>
+
+    <h2>Form Validation</h2>
+    
+    <form (ngSubmit)="onSubmit()" #form="ngForm">
+      <div class="form-group">
+        <label style="font-size:x-large;" for="name">Name:</label>
+        <input type="text"  class="form-control" id="name" name="name" [(ngModel)]="name" placeholder="Enter Name" required>
+      </div>
+      
+      
+      <div class="form-group">
+        <label style="font-size:x-large;" for="email">Email:</label>
+        <input  type="email" class="form-control" id="email" name="email" placeholder="Enter Email" [(ngModel)]="email" required email>
+      </div>
+      
+      <div class="form-group">
+        <label style="font-size:x-large;" for="contactNumber">Contact:</label>
+        <input  type="tel" class="form-control" id="contactNumber" name="contactNumber" placeholder="Enter Contact" [(ngModel)]="contactNumber" required pattern="[0-9]{10}">
+      </div>
+      
+      <div class="form-group">
+        <label style="font-size:x-large;" for="password">Password:</label>
+        <input  type="password" class="form-control" id="password" name="password" placeholder="Enter Password" [(ngModel)]="password" required minlength="8">
+      </div>
+      
+      <button style="display: inline-block;
+      margin: 10px;
+      padding: 10px 20px;
+     
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;" type="submit" class="btn btn-primary" [disabled]="!form.valid">Submit</button>
+    </form>
+    
+    <div *ngIf="submitted" class="submitted-details">
+        <hr>
+      <h3>Submitted Details:</h3>
+      <p><strong>Name:</strong> {{ name }}</p>
+      <p><strong>Email:</strong> {{ email }}</p>
+      <p><strong>Contact Number:</strong> {{ contactNumber }}</p>
+      <p><strong>Password:</strong> {{ password }}</p>
+    </div>
+  </div>
+</div>

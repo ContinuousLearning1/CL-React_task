@@ -1,0 +1,28 @@
+#main{
+  margin-left: 25%;
+  margin-right: 25%;
+    margin-bottom: 2rem;
+    background-color: beige;
+
+    padding: 1rem;
+    background-color: rgb(208, 203, 171);
+    border-radius: 5px;
+    box-shadow: 2px 5px rgb(15, 15, 15);
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  input[type="text"] {
+    padding: 7px;
+    font-size: 16px;
+    width: 90%;
+    margin-bottom: 12px;
+  }
+  

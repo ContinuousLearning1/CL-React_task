@@ -1,0 +1,18 @@
+<div id="main">
+
+    <h2 style="text-align: center;background-color: blue; color: white;">Task 5</h2>
+
+    <div class="upload-container">
+        <div class="circle">
+          <img *ngIf="imageUrl" [src]="imageUrl" alt="Uploaded Image">
+        </div>
+        <input type="file" (change)="handleImageUpload($event)">
+        
+      </div>
+      
+      
+</div>
+<!-- 
+<div>
+  <button (click)="http://localhost:8080/excel"></button>
+</div> -->

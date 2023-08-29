@@ -1,0 +1,53 @@
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  color: #000000;
+  text-align: center;
+}
+
+.task-links {
+  margin-top: 20px;
+}
+
+.task-links a {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.task-links a:hover {
+  background-color: #0056b3;
+}
+
+
+#button1{
+    background-color: blue;
+    color: white;
+    font-size: xx-large;
+
+}
+#button2{
+ 
+  margin-left: 1rem;
+
+}
+#main{
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-bottom: 2%;
+  background-color: rgb(234, 193, 112);
+  /* padding: 1rem; */
+  /* border: 2px solid rgb(187, 226, 31); */
+  border-radius: 5px;
+  box-shadow: 2px 5px rgb(15, 15, 15);
+}

@@ -1,0 +1,25 @@
+<div id="main">
+  <h2 style="text-align: center;background-color: blue; color: white;">Task 4</h2>
+
+  <div>
+    <input type="text" [(ngModel)]="searchKeyword" (input)="filterList()" placeholder="Search Product">
+    
+  </div>
+  
+  <table>
+    
+    <thead>
+      <tr>
+        <th style="padding-right: 2rem;">Name</th>
+        <th style="padding-right: 3rem;">Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of filteredList">
+        <td style="padding-left: 8rem;">{{ product.name }}</td>
+        <td>{{ product.price }}</td>
+      </tr>
+    </tbody>
+  </table>
+  
+</div>

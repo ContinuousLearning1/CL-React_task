@@ -1,0 +1,72 @@
+<div id="main">
+<!-- <ul *ngFor="let user of userDetails">
+    <li>{{user.email}}</li>
+    <li>{{user.name}}</li>
+    <li>{{user.phone}}</li>
+
+</ul> -->
+
+<!-- <div>
+    <input type="text" [(ngModel)]="searchKeyword" (input)="filterList()" placeholder="Search Name">
+    
+  </div> -->
+  <h2 style="text-align: center;background-color: blue; color: white;">Task 6</h2>
+
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Contact</th>
+    </tr>
+    <tr *ngFor="let user of  userDetails">
+        <td>{{user.id}}</td>
+        <td>{{user.name}}</td>
+        <td>{{user.email}}</td>
+        <td>{{user.phone}}</td>
+
+    </tr>
+</table>
+</div>
+
+<!-- <hr>
+<div>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+
+        <th>Password</th>
+        <th>Image</th>
+
+      </tr>
+      <tr *ngFor="let items of data">
+        <td>{{items.name}}</td>
+        <td>{{items.email}}</td>
+
+        <td>{{items.password}}</td> -->
+        <!-- <td>
+            <div *ngIf="!items.profileVideoId">
+              <iframe
+                width="640"
+                height="360"
+                [src]="getEmbeddedVideoUrl(items.profileVideoId)"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div *ngIf="!items.profileVideoId">
+              No video available.
+            </div>
+          </td> -->
+        <!-- <td>
+            <img [src]="items.profileImage" alt="Profile Image" width="100px">
+        </td>
+        
+
+
+      </tr>
+    </table>
+</div> -->
